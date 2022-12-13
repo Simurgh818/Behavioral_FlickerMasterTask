@@ -127,9 +127,6 @@ function sourceSignal=produceExperimentSignals_FlickerFrequency(safetyTesting,du
                 for i=1:length(baseline_rand) %insert baseline trials
                     temp=[temp(1:(i-1)*(nber_stimconditions+1)+baseline_rand(i)-1) "Baseline" temp((i-1)*(nber_stimconditions+1)+baseline_rand(i):end)];
                 end
-            elseif ~baseline_present
-                % Do nothing. 
-
             end
         end
 
